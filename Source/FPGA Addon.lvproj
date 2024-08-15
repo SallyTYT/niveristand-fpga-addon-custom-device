@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="21008000">
 	<Property Name="CCSymbols" Type="Str">OFFLINE,FALSE;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
@@ -153,6 +153,14 @@
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utilities/Copy .LLB to NI VeriStand dir.vi"/>
 			<Item Name="Copy Scripting .LLB to LV Addons dir.vi" Type="VI" URL="../Utilities/Copy Scripting .LLB to LV Addons dir.vi"/>
+		</Item>
+		<Item Name="Conflict Dependencies" Type="Folder">
+			<Item Name="NI_Data_Type" Type="Folder">
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+			</Item>
+			<Item Name="VariantType" Type="Folder">
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+			</Item>
 		</Item>
 		<Item Name="NI_Word.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Word/NI_Word.lvclass"/>
 		<Item Name="NI_Excel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Excel/NI_Excel.lvclass"/>
@@ -417,7 +425,6 @@
 				<Item Name="Multi-line String to Array__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Multi-line String to Array__ogtk__jki_vi_tester.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
@@ -583,7 +590,6 @@
 				<Item Name="Type Descriptor__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Type Descriptor__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="UnpackedFlatVectorToMatrix.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/UnpackedFlatVectorToMatrix.vi"/>
 				<Item Name="Variant to Header Info__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Variant to Header Info__ogtk__jki_vi_tester.vi"/>
-				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VITesterUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/VITesterUtilities.lvlib"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
@@ -661,6 +667,10 @@
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="Word Open method.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_office/word.llb/Word Open method.vi"/>
 				<Item Name="Read JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Read JPEG File.vi"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/Numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="Member VI Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/Data Type/Member VI Info.ctl"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
+				<Item Name="VIAnUtil Check Type If ErrClust.vi" Type="VI" URL="/&lt;vilib&gt;/Addons/analyzer/_analyzerutils.llb/VIAnUtil Check Type If ErrClust.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -863,7 +873,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{62C93B8A-C3B1-4A9B-B9F2-FB8453C01F16}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{75A7D601-B52B-4398-AD7D-4598E660B917}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Allow debugging</Property>
@@ -972,7 +982,43 @@
 				<Property Name="Source[7].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[7].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[7].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="Source[8].Container.applyPrefix" Type="Bool">true</Property>
+				<Property Name="Source[8].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[8].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[8].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Conflict Dependencies/NI_Data_Type</Property>
+				<Property Name="Source[8].newName" Type="Str">NI_Data_Type_</Property>
+				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[8].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[8].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[8].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[8].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[8].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[8].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[8].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[8].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[8].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[8].type" Type="Str">Container</Property>
+				<Property Name="Source[9].Container.applyPrefix" Type="Bool">true</Property>
+				<Property Name="Source[9].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[9].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[9].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Conflict Dependencies/VariantType</Property>
+				<Property Name="Source[9].newName" Type="Str">VariantType_</Property>
+				<Property Name="Source[9].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[9].properties[1].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[9].properties[2].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[9].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[9].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[9].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[9].properties[4].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[9].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[9].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[9].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">10</Property>
 			</Item>
 			<Item Name="Packed Scripting API" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -1085,6 +1131,14 @@
 			<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 			<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 		</Item>
+		<Item Name="Conflict Dependencies" Type="Folder">
+			<Item Name="NI_Data_Type" Type="Folder">
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+			</Item>
+			<Item Name="VariantType" Type="Folder">
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+			</Item>
+		</Item>
 		<Item Name="FPGA Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/FPGA Addon Engine.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -1119,18 +1173,20 @@
 				<Item Name="LVFixedPointRepBitsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepBitsTypeDef.ctl"/>
 				<Item Name="LVFixedPointRepRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepRangeTypeDef.ctl"/>
 				<Item Name="LVFPGAAdvSessionResources.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/LVFPGA Adv Session Resources/LVFPGAAdvSessionResources.lvlib"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/Numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="Member VI Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/Data Type/Member VI Info.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_VS Custom Device Waveform API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Waveform API/NI_VS Custom Device Waveform API.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="VIAnUtil Check Type If ErrClust.vi" Type="VI" URL="/&lt;vilib&gt;/Addons/analyzer/_analyzerutils.llb/VIAnUtil Check Type If ErrClust.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="FPGA Addon Shared.lvlib" Type="Library" URL="../Addon/Addon Shared/FPGA Addon Shared.lvlib"/>
@@ -1183,7 +1239,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AB4FB906-25A9-4416-B9F8-71CD4CBD6630}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0A818816-EC2E-4813-9DC5-47ED0BD20829}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Allow debugging</Property>
@@ -1273,7 +1329,43 @@
 				<Property Name="Source[5].properties[4].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="Source[6].Container.applyPrefix" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/Linux x64/Conflict Dependencies/NI_Data_Type</Property>
+				<Property Name="Source[6].newName" Type="Str">NI_Data_Type_</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[6].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[6].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[6].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[6].type" Type="Str">Container</Property>
+				<Property Name="Source[7].Container.applyPrefix" Type="Bool">true</Property>
+				<Property Name="Source[7].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[7].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/Linux x64/Conflict Dependencies/VariantType</Property>
+				<Property Name="Source[7].newName" Type="Str">VariantType_</Property>
+				<Property Name="Source[7].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[7].properties[1].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[7].properties[2].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[7].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[7].properties[3].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[7].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[7].properties[4].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[7].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[7].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[7].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">8</Property>
 			</Item>
 		</Item>
 	</Item>
