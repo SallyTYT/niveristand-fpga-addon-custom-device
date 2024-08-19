@@ -2,7 +2,9 @@
 
 The **FPGA Addon Custom Device** is an [inline custom device with asynchronous loops](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-inline-async-loop/). It uses the [Inline Async API](https://github.com/ni/niveristand-custom-device-development-tools/tree/main/inline-async-api) for data transfer between inline and synchronous VIs.
 
-The transfer of the scalar data types is done inline with the VeriStand's Primary Control Loop. The DMA transfer happens asynchronously using the `FPGA Addon Engine.lvlib:Input DMA Engine.vi` and the `FPGA Addon Engine.lvlib:Output DMA Engine.vi`.
+~~The transfer of the scalar data types is done inline with the VeriStand's Primary Control Loop. The DMA transfer happens asynchronously using the `FPGA Addon Engine.lvlib:Input DMA Engine.vi` and the `FPGA Addon Engine.lvlib:Output DMA Engine.vi`.~~
+
+The transfer of scalar data types happens asynchronously using the `FPGA Addon Engine.lvlib:Input Registers Engine.vi` and the `FPGA Addon Engine.lvlib:Output Registers Engine.vi`. The DMA transfer happens asynchronously using the `FPGA Addon Engine.lvlib:Input DMA Engine.vi` and the `FPGA Addon Engine.lvlib:Output DMA Engine.vi`.
 
 Interaction with the NI FPGA targets is done using the [LabVIEW FPGA Advanced Session Resources](https://forums.ni.com/t5/NI-Labs-Toolkits/LabVIEW-FPGA-Advanced-Session-Resources/ta-p/3500447).
 
